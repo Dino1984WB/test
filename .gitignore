@@ -1,7 +1,9 @@
 /*
 !.gitignore
 !README.md
-!apiMain.py
 !home.html
-!home.css
-!home.js
+!static/styles/home.css
+!static/home.js
+!apiMain.py
+!searchDb.py
+!initConn.py
