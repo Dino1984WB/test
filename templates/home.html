@@ -1,0 +1,21 @@
+<html>
+
+<link href= "{{ url_for('static',filename='styles/home.css') }}" rel='stylesheet'>
+
+<form method="post" action="/login">
+<div class="box">
+<h1>DB Access Portal</h1>
+
+<input id = "name" type="name" name="name" value="admin" class="name" />
+    
+<a href="#"><div id="searchBtn" class="searchBtn" onclick="fetchName()">Search</div></a> <!-- End Btn -->
+
+<input id = "result" type="result" name="result" value="result" class="result" />
+
+</div> <!-- End Box -->
+
+</form>
+  
+<script src="home.js" type="text/javascript"></script>
+
+</html>
