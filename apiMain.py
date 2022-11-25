@@ -12,7 +12,7 @@ def renderhome(): #function to search db for name entered
 
     queryName=""
     if request.method == 'POST':
-            queryName = request.get_json()
+            queryName = request.data
 
     print(queryName)
 
