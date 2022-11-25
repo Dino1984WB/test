@@ -1,16 +1,14 @@
 //home page js
 
 //grab name from input in home.html
-let nameS = document.getElementById('name');
-let nameString = JSON.stringify(nameS);
-console.log(nameS);
+let inputString = document.getElementById('_name').innerHTML;
 
 //function triggered by html button
 async function fetchName () {
   
   let response = await fetch('http://127.0.0.1:8000', {
     method: 'POST',
-    body: JSON.stringify(nameString)
+    body: JSON.stringify(inputString)
   });
 
 
@@ -24,3 +22,5 @@ async function fetchName () {
   }
     
 }
+
+console.log(JSON.stringify(inputString));
